@@ -1,1 +1,1670 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Insulares | Productora Cultural</title>
+
+<meta name="description" content="Insulares. Productora cultural dedicada al desarrollo de proyectos de patrimonio, cultura, medioambiente, territorio y memoria en el sur de Chile.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* ==================================================
+   CONFIGURACIÓN GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f4f1e9;
+    color: #26352d;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 88%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* ==================================================
+   NAVEGACIÓN
+================================================== */
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(244,241,233,0.94);
+
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(38,53,45,0.10);
+}
+
+nav {
+
+    height: 86px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
+
+    color: #29483a;
+
+    font-weight: 600;
+}
+
+.logo small {
+
+    display: block;
+
+    font-family: 'DM Sans', sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+
+    margin-top: -7px;
+
+    color: #7c887f;
+}
+
+.menu {
+
+    display: flex;
+
+    gap: 35px;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: #526057;
+}
+
+.menu a {
+
+    transition: .3s;
+}
+
+.menu a:hover {
+
+    color: #8a6f43;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(20,40,31,.94),
+        rgba(20,40,31,.72),
+        rgba(20,40,31,.28)
+    ),
+
+    url('insulares-portada.jpg')
+
+    center/cover no-repeat;
+}
+
+.hero-content {
+
+    max-width: 850px;
+
+    color: white;
+
+    padding-top: 80px;
+}
+
+.hero-label {
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+    font-size: 10px;
+
+    color: #d9c79d;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+
+    font-size: clamp(70px, 11vw, 150px);
+
+    line-height: .82;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 40px;
+}
+
+.hero h1 span {
+
+    color: #d8c69d;
+}
+
+.hero-description {
+
+    max-width: 650px;
+
+    font-size: 17px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,.87);
+
+    margin-bottom: 45px;
+}
+
+.hero-button {
+
+    display: inline-block;
+
+    padding: 16px 28px;
+
+    border: 1px solid rgba(255,255,255,.55);
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.hero-button:hover {
+
+    background: white;
+
+    color: #29483a;
+}
+
+
+/* ==================================================
+   INTRODUCCIÓN
+================================================== */
+
+.intro {
+
+    padding: 140px 0;
+
+    background: #f4f1e9;
+}
+
+.intro-grid {
+
+    display: grid;
+
+    grid-template-columns: .8fr 1.5fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+.label {
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 10px;
+
+    color: #8a6f43;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+.intro h2 {
+
+    font-size: 65px;
+
+    line-height: .95;
+
+    color: #29483a;
+}
+
+.intro-text {
+
+    max-width: 720px;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    color: #59665e;
+}
+
+.intro-text p {
+
+    margin-bottom: 25px;
+}
+
+.intro-text strong {
+
+    color: #29483a;
+}
+
+
+/* ==================================================
+   MANIFIESTO
+================================================== */
+
+.manifesto {
+
+    padding: 120px 0;
+
+    background: #29483a;
+
+    color: white;
+
+    text-align: center;
+}
+
+.manifesto-inner {
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.manifesto h2 {
+
+    font-size: clamp(45px, 7vw, 80px);
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.manifesto p {
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    color: rgba(255,255,255,.75);
+}
+
+
+/* ==================================================
+   ÁREAS
+================================================== */
+
+.areas {
+
+    padding: 120px 0;
+
+    background: #e8e5dc;
+}
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 65px;
+}
+
+.section-heading h2 {
+
+    font-size: 65px;
+
+    color: #29483a;
+
+    line-height: .9;
+}
+
+.section-heading p {
+
+    max-width: 420px;
+
+    color: #69736d;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.area-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    border-top: 1px solid rgba(38,53,45,.18);
+}
+
+.area {
+
+    padding: 35px 25px;
+
+    border-right: 1px solid rgba(38,53,45,.18);
+}
+
+.area:first-child {
+
+    border-left: 1px solid rgba(38,53,45,.18);
+}
+
+.area-number {
+
+    font-size: 11px;
+
+    color: #8a6f43;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 35px;
+}
+
+.area h3 {
+
+    font-size: 32px;
+
+    color: #29483a;
+
+    margin-bottom: 15px;
+}
+
+.area p {
+
+    font-size: 13px;
+
+    color: #69736d;
+
+    line-height: 1.8;
+}
+
+
+/* ==================================================
+   PROYECTOS
+================================================== */
+
+.projects {
+
+    padding: 140px 0;
+
+    background: #f4f1e9;
+}
+
+.projects-header {
+
+    margin-bottom: 70px;
+}
+
+.projects-header h2 {
+
+    font-size: clamp(60px,8vw,95px);
+
+    color: #29483a;
+
+    line-height: .85;
+
+    margin-bottom: 25px;
+}
+
+.projects-header p {
+
+    max-width: 600px;
+
+    color: #69736d;
+
+    font-size: 15px;
+}
+
+
+/* PROYECTO */
+
+.project {
+
+    display: grid;
+
+    grid-template-columns: 1.05fr 1fr;
+
+    min-height: 430px;
+
+    margin-bottom: 45px;
+
+    background: #ebe8df;
+
+    overflow: hidden;
+}
+
+.project-image {
+
+    min-height: 430px;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.project-content {
+
+    padding: 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.project-number {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #8a6f43;
+
+    margin-bottom: 18px;
+}
+
+.project h3 {
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    color: #29483a;
+
+    margin-bottom: 22px;
+}
+
+.project p {
+
+    color: #5f6b63;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 28px;
+}
+
+.project-link {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #8a6f43;
+
+    color: #29483a;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.project-link:hover {
+
+    color: #8a6f43;
+
+    padding-left: 5px;
+}
+
+
+/* PROYECTOS ALTERNADOS */
+
+.project:nth-child(even) {
+
+    grid-template-columns: 1fr 1.05fr;
+}
+
+.project:nth-child(even) .project-image {
+
+    order: 2;
+}
+
+.project:nth-child(even) .project-content {
+
+    order: 1;
+}
+
+
+/* ==================================================
+   LA BICICLETA
+================================================== */
+
+.featured {
+
+    padding: 150px 0;
+
+    background: #17291f;
+
+    color: white;
+}
+
+.featured-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.featured-label {
+
+    color: #d9c79d;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 10px;
+
+    margin-bottom: 20px;
+}
+
+.featured h2 {
+
+    font-size: clamp(55px,7vw,90px);
+
+    line-height: .88;
+
+    margin-bottom: 30px;
+}
+
+.featured h2 span {
+
+    color: #d8c69d;
+}
+
+.featured p {
+
+    color: rgba(255,255,255,.70);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    max-width: 550px;
+
+    margin-bottom: 35px;
+}
+
+.featured-button {
+
+    display: inline-block;
+
+    background: #d9c79d;
+
+    color: #29483a;
+
+    padding: 16px 28px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.featured-button:hover {
+
+    background: white;
+}
+
+.featured-image {
+
+    min-height: 500px;
+
+    background:
+
+    linear-gradient(
+        rgba(20,40,31,.15),
+        rgba(20,40,31,.15)
+    ),
+
+    url('la-bicicleta.jpg')
+
+    center/cover no-repeat;
+}
+
+
+/* ==================================================
+   CIERRE
+================================================== */
+
+.closing {
+
+    padding: 150px 0;
+
+    background: #f4f1e9;
+
+    text-align: center;
+}
+
+.closing h2 {
+
+    font-size: clamp(55px,8vw,90px);
+
+    color: #29483a;
+
+    line-height: .9;
+
+    margin-bottom: 30px;
+}
+
+.closing p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #69736d;
+
+    font-size: 16px;
+
+    line-height: 2;
+}
+
+.closing-contact {
+
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 16px 30px;
+
+    background: #29483a;
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.closing-contact:hover {
+
+    background: #8a6f43;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    background: #111d17;
+
+    color: white;
+
+    padding: 60px 0;
+}
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: end;
+}
+
+.footer-logo {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 38px;
+
+    letter-spacing: 2px;
+}
+
+.footer-subtitle {
+
+    color: rgba(255,255,255,.45);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+.footer-right {
+
+    text-align: right;
+
+    color: rgba(255,255,255,.55);
+
+    font-size: 11px;
+
+    line-height: 2;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media(max-width:900px) {
+
+    .menu {
+        display: none;
+    }
+
+    .intro-grid,
+    .featured-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .area-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .project,
+    .project:nth-child(even) {
+
+        grid-template-columns: 1fr;
+    }
+
+    .project-image,
+    .project:nth-child(even) .project-image {
+
+        order: 1;
+
+        min-height: 320px;
+    }
+
+    .project-content,
+    .project:nth-child(even) .project-content {
+
+        order: 2;
+
+        padding: 40px 30px;
+    }
+
+    .featured-image {
+
+        min-height: 350px;
+    }
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .footer-right {
+
+        text-align: left;
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .intro h2,
+    .section-heading h2 {
+
+        font-size: 52px;
+    }
+
+    .area-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .area {
+
+        border-left: 1px solid rgba(38,53,45,.18);
+
+        border-bottom: 1px solid rgba(38,53,45,.18);
+    }
+
+    .project h3 {
+
+        font-size: 40px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     MENÚ
+================================================== -->
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="#" class="logo">
+
+INSULARES
+
+<small>PRODUCTORA CULTURAL</small>
+
+</a>
+
+
+<div class="menu">
+
+<a href="#nosotros">Nosotros</a>
+
+<a href="#proyectos">Proyectos</a>
+
+<a href="#contacto">Contacto</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-label">
+
+Productora Cultural · Sur de Chile
+
+</div>
+
+
+<h1>
+
+Cultura<br>
+
+<span>con territorio.</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+Desarrollamos y producimos proyectos culturales que
+conectan patrimonio, memoria, medioambiente y comunidad,
+poniendo en valor las identidades y saberes del territorio.
+
+</p>
+
+
+<a href="#proyectos" class="hero-button">
+
+Explorar proyectos
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     INTRO
+================================================== -->
+
+<section class="intro" id="nosotros">
+
+<div class="container">
+
+<div class="intro-grid">
+
+<div>
+
+<div class="label">
+
+Insulares
+
+</div>
+
+<h2>
+
+Cultura<br>
+que deja<br>
+huella.
+
+</h2>
+
+</div>
+
+
+<div class="intro-text">
+
+<p>
+
+<strong>Insulares</strong> es una productora cultural dedicada
+al desarrollo, producción y gestión de proyectos que vinculan
+el arte, la cultura, el patrimonio y el territorio.
+
+</p>
+
+
+<p>
+
+Trabajamos especialmente con comunidades, organizaciones e
+instituciones del sur de Chile, desarrollando iniciativas que
+rescatan memorias, saberes tradicionales y expresiones culturales,
+generando espacios de encuentro y participación.
+
+</p>
+
+
+<p>
+
+Nuestro trabajo integra también una mirada de
+<strong>sostenibilidad y cuidado del medioambiente</strong>,
+entendiendo el patrimonio cultural y natural como parte de un
+mismo territorio vivo.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     MANIFIESTO
+================================================== -->
+
+<section class="manifesto">
+
+<div class="container">
+
+<div class="manifesto-inner">
+
+<div class="label" style="color:#d9c79d;">
+
+Nuestra mirada
+
+</div>
+
+<h2>
+
+El territorio también cuenta historias.
+
+</h2>
+
+<p>
+
+Creemos en la cultura como una herramienta para
+preservar la memoria, fortalecer comunidades y
+imaginar futuros sostenibles.
+
+Producimos proyectos que nacen desde los territorios
+y que buscan generar vínculos duraderos entre
+personas, cultura y entorno.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     ÁREAS DE TRABAJO
+================================================== -->
+
+<section class="areas">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div>
+
+<div class="label">
+
+Lo que hacemos
+
+</div>
+
+<h2>
+
+Áreas<br>
+de trabajo
+
+</h2>
+
+</div>
+
+<p>
+
+Diseñamos y producimos proyectos culturales desde una
+mirada interdisciplinaria, conectando patrimonio,
+creatividad, educación, comunidad y sostenibilidad.
+
+</p>
+
+</div>
+
+
+<div class="area-grid">
+
+
+<div class="area">
+
+<div class="area-number">01</div>
+
+<h3>Patrimonio</h3>
+
+<p>
+
+Investigación, documentación y difusión del patrimonio
+cultural material e inmaterial.
+
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-number">02</div>
+
+<h3>Cultura</h3>
+
+<p>
+
+Producción de proyectos audiovisuales, educativos,
+artísticos y comunitarios.
+
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-number">03</div>
+
+<h3>Territorio</h3>
+
+<p>
+
+Trabajo junto a comunidades para poner en valor
+identidades, memorias y saberes locales.
+
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-number">04</div>
+
+<h3>Sostenibilidad</h3>
+
+<p>
+
+Proyectos que conectan cultura y medioambiente,
+promoviendo prácticas responsables y sostenibles.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     PROYECTOS
+================================================== -->
+
+<section class="projects" id="proyectos">
+
+<div class="container">
+
+
+<div class="projects-header">
+
+<div class="label">
+
+Proyectos seleccionados
+
+</div>
+
+<h2>
+
+Nuestro<br>
+trabajo.
+
+</h2>
+
+<p>
+
+Una selección de proyectos desarrollados en torno
+a la cultura, el patrimonio, el medioambiente,
+la educación y la memoria territorial.
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+     PROYECTO 1
+================================================== -->
+
+<div class="project">
+
+<div
+class="project-image"
+style="background-image:url('guardianas.jpg');">
+</div>
+
+
+<div class="project-content">
+
+<div class="project-number">
+01 · PATRIMONIO CULTURAL
+</div>
+
+<h3>
+Guardianas del Sur
+</h3>
+
+<p>
+
+Serie documental dedicada a relevar el patrimonio
+cultural inmaterial de Chiloé a través de las historias
+y conocimientos de mujeres portadoras y transmisoras
+de saberes tradicionales.
+
+</p>
+
+<a href="Guardianas.html" class="project-link">
+
+Ver proyecto →
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     PROYECTO 2
+================================================== -->
+
+<div class="project">
+
+<div
+class="project-image"
+style="background-image:url('reciclando.jpg');">
+</div>
+
+
+<div class="project-content">
+
+<div class="project-number">
+02 · PATRIMONIO Y MEDIOAMBIENTE
+</div>
+
+<h3>
+
+Reciclando<br>
+Patrimonio Inmaterial
+
+</h3>
+
+<p>
+
+Proyecto que conecta los saberes tradicionales
+con prácticas de sostenibilidad ambiental,
+generando espacios de aprendizaje y participación
+junto a comunidades de Chiloé.
+
+</p>
+
+<a href="Reciclando.html" class="project-link">
+
+Ver proyecto →
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     PROYECTO 3
+================================================== -->
+
+<div class="project">
+
+<div
+class="project-image"
+style="background-image:url('cultivo.jpg');">
+</div>
+
+
+<div class="project-content">
+
+<div class="project-number">
+03 · MEDIOAMBIENTE Y COMUNIDAD
+</div>
+
+<h3>
+
+Cultivo<br>
+Sustentable
+
+</h3>
+
+<p>
+
+Ciclo de talleres orientado al autocultivo,
+la alimentación saludable, la participación
+comunitaria y el cuidado del medioambiente.
+
+</p>
+
+<a href="Cultivo.html" class="project-link">
+
+Ver proyecto →
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     PROYECTO 4
+================================================== -->
+
+<div class="project">
+
+<div
+class="project-image"
+style="background-image:url('libros.jpg');">
+</div>
+
+
+<div class="project-content">
+
+<div class="project-number">
+04 · CULTURA Y LECTURA
+</div>
+
+<h3>
+
+Fomento del<br>
+Libro y la Lectura
+
+</h3>
+
+<p>
+
+Ciclo de encuentros dedicado a promover la lectura,
+la reflexión, el aprendizaje y el bienestar integral
+a través del encuentro y la conversación.
+
+</p>
+
+<a href="Libro.html" class="project-link">
+
+Ver proyecto →
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     PROYECTO 5
+================================================== -->
+
+<div class="project">
+
+<div
+class="project-image"
+style="background-image:url('tejiendo.jpg');">
+</div>
+
+
+<div class="project-content">
+
+<div class="project-number">
+05 · MUJERES Y PATRIMONIO
+</div>
+
+<h3>
+
+Tejiendo Comunidad
+
+</h3>
+
+<p>
+
+Mujeres, Memoria y Patrimonio Vivo en el Territorio.
+Proyecto orientado al fortalecimiento de prácticas
+tradicionales, memoria comunitaria y participación
+de mujeres del territorio.
+
+</p>
+
+<a href="Tejiendo.html" class="project-link">
+
+Ver proyecto →
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     LA BICICLETA
+================================================== -->
+
+<section class="featured">
+
+<div class="container">
+
+<div class="featured-grid">
+
+
+<div>
+
+<div class="featured-label">
+
+06 · TELEVISIÓN CULTURAL
+
+</div>
+
+
+<h2>
+
+La Bicicleta:<br>
+
+<span>Cultura Entre Ruedas</span>
+
+</h2>
+
+
+<p>
+
+Programa de televisión cultural emitido durante
+<strong>7 temporadas en Canal 13C</strong>, dedicado
+a recorrer territorios, historias, personas y
+expresiones culturales.
+
+Una experiencia de comunicación cultural que acercó
+el patrimonio, la creatividad y las identidades
+territoriales a las audiencias.
+
+</p>
+
+
+<a
+href="https://www.youtube.com/watch?v=FWFORyMPXEI"
+target="_blank"
+rel="noopener noreferrer"
+class="featured-button">
+
+Entrevista a Amancay Wessel
+
+</a>
+
+</div>
+
+
+<div class="featured-image"></div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     CIERRE
+================================================== -->
+
+<section class="closing" id="contacto">
+
+<div class="container">
+
+<div class="label">
+
+Productora Cultural Insulares
+
+</div>
+
+
+<h2>
+
+Crear.<br>
+Producir.<br>
+Preservar.
+
+</h2>
+
+
+<p>
+
+Desarrollamos proyectos culturales que ponen en valor
+el patrimonio, fortalecen las comunidades y generan
+nuevas formas de encuentro entre cultura, territorio
+y medioambiente.
+
+</p>
+
+
+<a
+href="mailto:contacto@insulares.cl"
+class="closing-contact">
+
+Contactar a Insulares
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<div class="footer-logo">
+
+INSULARES
+
+</div>
+
+<div class="footer-subtitle">
+
+Productora Cultural
+
+</div>
+
+</div>
+
+
+<div class="footer-right">
+
+Patrimonio · Cultura · Territorio · Medioambiente
+
+<br>
+
+© 2026 Productora Cultural Insulares
+
+</div>
+
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
