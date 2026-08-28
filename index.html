@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,7 +20,7 @@
 
 <style>
 
-/* ================================================== 
+/* ==================================================
    CONFIGURACIÓN GENERAL
 ================================================== */
 
@@ -365,7 +366,7 @@ nav {
 
 
 /* ==================================================
-   ÁREAS
+   ÁREAS DE TRABAJO
 ================================================== */
 
 .areas {
@@ -458,7 +459,7 @@ nav {
 
 
 /* ==================================================
-   PROYECTOS
+   PROYECTOS — NUEVO DISEÑO
 ================================================== */
 
 .projects {
@@ -468,61 +469,97 @@ nav {
     background: #f4f1e9;
 }
 
-.projects-header {
+.projects-layout {
 
-    margin-bottom: 70px;
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.5fr;
+
+    gap: 100px;
+
+    align-items: start;
 }
 
-.projects-header h2 {
 
-    font-size: clamp(60px,8vw,95px);
+/* COLUMNA IZQUIERDA */
+
+.projects-intro {
+
+    position: sticky;
+
+    top: 130px;
+}
+
+.projects-intro h2 {
+
+    font-size: clamp(60px,7vw,95px);
 
     color: #29483a;
 
     line-height: .85;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.projects-header p {
+.projects-intro p {
 
-    max-width: 600px;
+    max-width: 300px;
 
     color: #69736d;
 
-    font-size: 15px;
+    font-size: 14px;
+
+    line-height: 1.9;
 }
 
 
-/* PROYECTO */
+/* LISTA DE PROYECTOS */
+
+.projects-list {
+
+    border-top: 1px solid rgba(38,53,45,.18);
+}
 
 .project {
 
     display: grid;
 
-    grid-template-columns: 1.05fr 1fr;
+    grid-template-columns: 180px 1fr;
 
-    min-height: 430px;
+    gap: 45px;
 
-    margin-bottom: 45px;
+    padding: 45px 0;
 
-    background: #ebe8df;
+    border-bottom: 1px solid rgba(38,53,45,.18);
 
-    overflow: hidden;
+    transition: .3s;
 }
+
+.project:hover {
+
+    padding-left: 10px;
+}
+
+
+/* IMAGEN */
 
 .project-image {
 
-    min-height: 430px;
+    width: 180px;
+
+    height: 135px;
 
     background-size: cover;
 
     background-position: center;
+
+    flex-shrink: 0;
 }
 
-.project-content {
 
-    padding: 55px;
+/* CONTENIDO */
+
+.project-content {
 
     display: flex;
 
@@ -539,29 +576,31 @@ nav {
 
     color: #8a6f43;
 
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .project h3 {
 
-    font-size: 48px;
+    font-size: 42px;
 
     line-height: 1;
 
     color: #29483a;
 
-    margin-bottom: 22px;
+    margin-bottom: 14px;
 }
 
 .project p {
 
     color: #5f6b63;
 
-    font-size: 14px;
+    font-size: 13px;
 
-    line-height: 1.9;
+    line-height: 1.8;
 
-    margin-bottom: 28px;
+    max-width: 650px;
+
+    margin-bottom: 15px;
 }
 
 .project-link {
@@ -570,7 +609,7 @@ nav {
 
     width: fit-content;
 
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 
     border-bottom: 1px solid #8a6f43;
 
@@ -590,24 +629,6 @@ nav {
     color: #8a6f43;
 
     padding-left: 5px;
-}
-
-
-/* PROYECTOS ALTERNADOS */
-
-.project:nth-child(even) {
-
-    grid-template-columns: 1fr 1.05fr;
-}
-
-.project:nth-child(even) .project-image {
-
-    order: 2;
-}
-
-.project:nth-child(even) .project-content {
-
-    order: 1;
 }
 
 
@@ -849,36 +870,21 @@ footer {
     }
 
     .intro-grid,
-    .featured-grid {
+    .featured-grid,
+    .projects-layout {
         grid-template-columns: 1fr;
 
         gap: 50px;
     }
 
+    .projects-intro {
+
+        position: static;
+    }
+
     .area-grid {
+
         grid-template-columns: repeat(2,1fr);
-    }
-
-    .project,
-    .project:nth-child(even) {
-
-        grid-template-columns: 1fr;
-    }
-
-    .project-image,
-    .project:nth-child(even) .project-image {
-
-        order: 1;
-
-        min-height: 320px;
-    }
-
-    .project-content,
-    .project:nth-child(even) .project-content {
-
-        order: 2;
-
-        padding: 40px 30px;
     }
 
     .featured-image {
@@ -925,6 +931,20 @@ footer {
         border-left: 1px solid rgba(38,53,45,.18);
 
         border-bottom: 1px solid rgba(38,53,45,.18);
+    }
+
+    .project {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .project-image {
+
+        width: 100%;
+
+        height: 220px;
     }
 
     .project h3 {
@@ -1255,8 +1275,12 @@ promoviendo prácticas responsables y sostenibles.
 
 <div class="container">
 
+<div class="projects-layout">
 
-<div class="projects-header">
+
+<!-- COLUMNA IZQUIERDA -->
+
+<div class="projects-intro">
 
 <div class="label">
 
@@ -1282,9 +1306,12 @@ la educación y la memoria territorial.
 </div>
 
 
-<!-- ==================================================
-     PROYECTO 1
-================================================== -->
+<!-- LISTA DE PROYECTOS -->
+
+<div class="projects-list">
+
+
+<!-- PROYECTO 1 -->
 
 <div class="project">
 
@@ -1297,11 +1324,15 @@ style="background-image:url('guardianas.jpg');">
 <div class="project-content">
 
 <div class="project-number">
+
 01 · PATRIMONIO CULTURAL
+
 </div>
 
 <h3>
+
 Guardianas del Sur
+
 </h3>
 
 <p>
@@ -1324,9 +1355,7 @@ Ver proyecto →
 </div>
 
 
-<!-- ==================================================
-     PROYECTO 2
-================================================== -->
+<!-- PROYECTO 2 -->
 
 <div class="project">
 
@@ -1339,13 +1368,14 @@ style="background-image:url('reciclando.jpg');">
 <div class="project-content">
 
 <div class="project-number">
+
 02 · PATRIMONIO Y MEDIOAMBIENTE
+
 </div>
 
 <h3>
 
-Reciclando<br>
-Patrimonio Inmaterial
+Reciclando Patrimonio Inmaterial
 
 </h3>
 
@@ -1369,9 +1399,7 @@ Ver proyecto →
 </div>
 
 
-<!-- ==================================================
-     PROYECTO 3
-================================================== -->
+<!-- PROYECTO 3 -->
 
 <div class="project">
 
@@ -1384,13 +1412,14 @@ style="background-image:url('cultivo.jpg');">
 <div class="project-content">
 
 <div class="project-number">
+
 03 · MEDIOAMBIENTE Y COMUNIDAD
+
 </div>
 
 <h3>
 
-Cultivo<br>
-Sustentable
+Cultivo Sustentable
 
 </h3>
 
@@ -1413,9 +1442,7 @@ Ver proyecto →
 </div>
 
 
-<!-- ==================================================
-     PROYECTO 4
-================================================== -->
+<!-- PROYECTO 4 -->
 
 <div class="project">
 
@@ -1428,13 +1455,14 @@ style="background-image:url('libros.jpg');">
 <div class="project-content">
 
 <div class="project-number">
+
 04 · CULTURA Y LECTURA
+
 </div>
 
 <h3>
 
-Fomento del<br>
-Libro y la Lectura
+Fomento del Libro y la Lectura
 
 </h3>
 
@@ -1457,9 +1485,7 @@ Ver proyecto →
 </div>
 
 
-<!-- ==================================================
-     PROYECTO 5
-================================================== -->
+<!-- PROYECTO 5 -->
 
 <div class="project">
 
@@ -1472,7 +1498,9 @@ style="background-image:url('tejiendo.jpg');">
 <div class="project-content">
 
 <div class="project-number">
+
 05 · MUJERES Y PATRIMONIO
+
 </div>
 
 <h3>
@@ -1500,6 +1528,10 @@ Ver proyecto →
 
 </div>
 
+
+</div>
+
+</div>
 
 </div>
 
@@ -1668,3 +1700,4 @@ Patrimonio · Cultura · Territorio · Medioambiente
 </body>
 
 </html>
+```
