@@ -1,1 +1,503 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Centro Comunitario-Cultural San Juan | Productora Cultural Insulares</title>
+
+<meta name="description" content="Centro Comunitario-Cultural San Juan. Recuperación y restauración de una casa comunitaria destinada al encuentro, la participación cultural y el desarrollo sociocultural de la localidad de San Juan, comuna de San Antonio.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #26352d;
+    background: #f7f6f1;
+    line-height: 1.7;
+}
+
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 82px;
+    background: #f7f6f1;
+    border-bottom: 1px solid rgba(38,53,45,.1);
+}
+
+nav {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #29483a;
+    text-decoration: none;
+}
+
+.back {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #425348;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: #8a6f43;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: #29483a;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.label {
+    color: #d9c79d;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 80px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.9);
+}
+
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.description {
+    padding: 100px 0;
+}
+
+.description h2 {
+    font-size: 55px;
+    color: #29483a;
+    margin-bottom: 30px;
+}
+
+.description p {
+    max-width: 850px;
+    color: #59665e;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery {
+    background: #eeece4;
+    padding: 100px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 55px;
+    color: #29483a;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: .4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   BOTÓN VOLVER
+========================= */
+
+.return {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.button {
+    display: inline-block;
+    background: #29483a;
+    color: white;
+    padding: 15px 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.button:hover {
+    background: #1d3027;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #1d3027;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255,255,255,.6);
+    font-size: 11px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media(max-width: 800px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .description,
+    .gallery {
+        padding: 70px 0;
+    }
+
+    .description h2,
+    .gallery h2 {
+        font-size: 45px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                INSULARES
+            </a>
+
+            <a href="index.html" class="back">
+                ← Volver al sitio
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="label">
+            Proyecto · Comunidad y Cultura
+        </div>
+
+        <h1>
+            Centro Comunitario-<br>
+            Cultural San Juan
+        </h1>
+
+        <p>
+            Recuperación y restauración de una casa comunitaria
+            destinada al encuentro, la participación cultural
+            y el desarrollo sociocultural de la localidad de San Juan,
+            comuna de San Antonio.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DESCRIPCIÓN
+========================= -->
+
+<section class="description">
+
+    <div class="container">
+
+        <h2>
+            Sobre el proyecto
+        </h2>
+
+        <p>
+            El Centro Comunitario-Cultural San Juan nace a partir de
+            la recuperación y restauración de una casa perteneciente
+            a la Junta de Vecinos de la localidad rural de San Juan,
+            en la comuna de San Antonio.
+        </p>
+
+        <br>
+
+        <p>
+            El proyecto permitió recuperar este espacio para ponerlo
+            nuevamente al servicio de la comunidad, fortaleciendo las
+            posibilidades de encuentro, participación y desarrollo de
+            actividades culturales, sociales y comunitarias.
+        </p>
+
+        <br>
+
+        <p>
+            La iniciativa contribuye a la puesta en valor de un espacio
+            comunitario significativo para los habitantes de San Juan,
+            promoviendo su uso como lugar de encuentro y fortalecimiento
+            del tejido social y cultural de la localidad.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALERÍA
+========================= -->
+
+<section class="gallery">
+
+    <div class="container">
+
+        <h2>
+            Registro del proyecto
+        </h2>
+
+        <div class="gallery-grid">
+
+
+            <!-- FOTO 1 -->
+
+            <img
+                src="ab.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 2 -->
+
+            <img
+                src="an.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 3 -->
+
+            <img
+                src="al.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 4 -->
+
+            <img
+                src="jorgito14.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 5 -->
+
+            <img
+                src="foto20 (15).jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 6 -->
+
+            <img
+                src="foto20 (18).jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 7 -->
+
+            <img
+                src="foto20 (7).jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 8 -->
+
+            <img
+                src="foto20 (9).jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 9 -->
+
+            <img
+                src="jorge5.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 10 -->
+
+            <img
+                src="jorge4.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 11 -->
+
+            <img
+                src="jorge 9.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 12 -->
+
+            <img
+                src="fotojorgito.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+            <!-- FOTO 13 -->
+
+            <img
+                src="fotojorge2.jpg"
+                alt="Centro Comunitario-Cultural San Juan"
+            >
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BOTÓN VOLVER
+========================= -->
+
+<section class="return">
+
+    <a href="index.html" class="button">
+        ← Volver al sitio principal
+    </a>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        Productora Cultural Insulares · Patrimonio · Medioambiente · Cultura
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
+```
 
