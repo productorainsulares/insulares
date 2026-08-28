@@ -1,1 +1,757 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ciclo de Talleres de Cultivo Sustentable | Greengalaxy</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #26352d;
+    background: #f7f6f1;
+    line-height: 1.7;
+}
+
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* MENÚ */
+
+header {
+    height: 82px;
+    background: #f7f6f1;
+    border-bottom: 1px solid rgba(38,53,45,.1);
+}
+
+nav {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #29483a;
+}
+
+.back {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #425348;
+}
+
+.back:hover {
+    color: #8a6f43;
+}
+
+/* PORTADA */
+
+.hero {
+    background: #29483a;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.label {
+    color: #d9c79d;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(50px,8vw,80px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* DESCRIPCIÓN */
+
+.description {
+    padding: 100px 0;
+}
+
+.description h2 {
+    font-size: 55px;
+    color: #29483a;
+    margin-bottom: 30px;
+}
+
+.description p {
+    max-width: 850px;
+    color: #59665e;
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* GALERÍA */
+
+.gallery {
+    background: #eeece4;
+    padding: 100px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 55px;
+    color: #29483a;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: .4s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* BOTÓN */
+
+.return {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.button {
+    display: inline-block;
+    background: #29483a;
+    color: white;
+    padding: 15px 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #8a6f43;
+}
+
+/* FOOTER */
+
+footer {
+    background: #1d3027;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255,255,255,.6);
+    font-size: 11px;
+}
+
+/* CELULAR */
+
+@media(max-width:800px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- MENÚ -->
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+GREENgalaxy
+</a>
+
+<a href="index.html" class="back">
+← Volver al sitio
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- PORTADA -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="label">
+Proyecto · Medioambiente y Comunidad
+</div>
+
+<h1>
+Ciclo de Talleres<br>
+de Cultivo Sustentable
+</h1>
+
+<p>
+Una iniciativa orientada al autocultivo, la alimentación saludable,
+la participación comunitaria y el cuidado del medioambiente.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- DESCRIPCIÓN -->
+
+<section class="description">
+
+<div class="container">
+
+<h2>
+Sobre el proyecto
+</h2>
+
+<p>
+El Ciclo de Talleres de Cultivo Sustentable es una iniciativa
+orientada al autocultivo, la alimentación saludable, la
+participación comunitaria y el cuidado del medioambiente.
+Se realizó en conjunto con la Municipalidad de Santo Domingo y la empresa 
+holandesa de semillas Rijk Zwaan. 
+</p>
+
+<br>
+
+<p>
+A través de los talleres se busca promover el aprendizaje
+y la participación, entregando herramientas y conocimientos
+que permitan fortalecer prácticas de cultivo sustentable
+y el vínculo de las comunidades con su entorno.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FOTOGRAFÍAS -->
+
+<section class="gallery">
+
+<div class="container">
+
+<h2>
+Registro del proyecto
+</h2>
+
+<div class="gallery-grid">
+
+<!-- FOTO 1 -->
+
+<img
+src="Semi1.JPG"
+alt="Ciclo de Talleres de Cultivo Sustentable">
+
+
+<!-- FOTO 2 -->
+
+<img
+src="Semi6.JPG"
+alt="Ciclo de Talleres de Cultivo Sustentable">
+
+
+<!-- FOTO 3 -->
+
+<img
+src="semi2.JPG"
+alt="Ciclo de Talleres de Cultivo Sustentable">
+
+
+<!-- FOTO 4 -->
+
+<img
+src="semi3.JPG"
+alt="Ciclo de Talleres de Cultivo Sustentable">
+
+
+<!-- FOTO 5 -->
+
+<img
+src="semi4.JPG"
+alt="Ciclo de Talleres de Cultivo Sustentable">
+
+
+<!-- FOTO 6 -->
+
+<img
+src="semi5.JPG"
+alt="Ciclo de Talleres de Cultivo Sustentable">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VOLVER -->
+
+<section class="return">
+
+<a href="index.html" class="button">
+← Volver al sitio principal
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+Asociación Greengalaxy · Patrimonio · Medioambiente · Sostenibilidad
+</p>
+
+</footer>
+
+</body>
+
+</html>
+```
+
+Ese era cultivo sustentable.
+
+3
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fomento del Libro y la Lectura | Greengalaxy</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Montserrat',sans-serif;
+    color:#26352d;
+    background:#f7f6f1;
+    line-height:1.7;
+}
+
+h1,h2 {
+    font-family:'Cormorant Garamond',serif;
+}
+
+.container {
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* MENÚ */
+
+header {
+    height:82px;
+    background:#f7f6f1;
+    border-bottom:1px solid rgba(38,53,45,.1);
+}
+
+nav {
+    height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo {
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+    font-weight:700;
+    color:#29483a;
+}
+
+.back {
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#425348;
+}
+
+.back:hover {
+    color:#8a6f43;
+}
+
+/* PORTADA */
+
+.hero {
+    background:#29483a;
+    color:white;
+    padding:100px 0;
+    text-align:center;
+}
+
+.label {
+    color:#d9c79d;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:11px;
+    margin-bottom:20px;
+}
+
+.hero h1 {
+    font-size:clamp(50px,8vw,80px);
+    line-height:1;
+    margin-bottom:25px;
+}
+
+.hero p {
+    max-width:700px;
+    margin:auto;
+    font-size:16px;
+    font-weight:300;
+}
+
+/* DESCRIPCIÓN */
+
+.description {
+    padding:100px 0;
+}
+
+.description h2 {
+    font-size:55px;
+    color:#29483a;
+    margin-bottom:30px;
+}
+
+.description p {
+    max-width:850px;
+    color:#59665e;
+    font-size:16px;
+    line-height:2;
+}
+
+/* FOTOS */
+
+.gallery {
+    background:#eeece4;
+    padding:100px 0;
+}
+
+.gallery h2 {
+    text-align:center;
+    font-size:55px;
+    color:#29483a;
+    margin-bottom:50px;
+}
+
+.gallery-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery img {
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+
+.gallery img:hover {
+    transform:scale(1.03);
+}
+
+/* BOTÓN */
+
+.return {
+    text-align:center;
+    padding:90px 0;
+}
+
+.button {
+    display:inline-block;
+    background:#29483a;
+    color:white;
+    padding:15px 30px;
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.button:hover {
+    background:#8a6f43;
+}
+
+/* FOOTER */
+
+footer {
+    background:#1d3027;
+    color:white;
+    padding:40px 0;
+    text-align:center;
+}
+
+footer p {
+    color:rgba(255,255,255,.6);
+    font-size:11px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px) {
+
+    .gallery-grid {
+        grid-template-columns:1fr;
+    }
+
+    .hero h1,
+    .description h2,
+    .gallery h2 {
+        font-size:45px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- MENÚ -->
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+GREENgalaxy
+</a>
+
+<a href="index.html" class="back">
+← Volver al sitio
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- PORTADA -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="label">
+Proyecto · Cultura y Lectura
+</div>
+
+<h1>
+Ciclo de Charlas<br>
+de Fomento del Libro y la Lectura
+</h1>
+
+<p>
+Un ciclo de encuentros dedicado a promover la lectura,
+la reflexión, el aprendizaje y el bienestar integral.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- DESCRIPCIÓN -->
+
+<section class="description">
+
+<div class="container">
+
+<h2>
+Sobre el proyecto
+</h2>
+
+<p>
+El Ciclo de Charlas de Fomento del Libro y la Lectura es una
+iniciativa desarrollada en conjunto con el Hotel Museo El Greco en
+la ciudad de Puerto Varas, orientado a promover la lectura, la reflexión
+y el aprendizaje a través del encuentro y la conversación.
+</p>
+
+<br>
+
+<p>
+Los encuentros buscan generar espacios de participación,
+intercambio y acercamiento a los libros y la lectura,
+contribuyendo también al bienestar integral de quienes
+participan en estas actividades.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FOTOGRAFÍAS -->
+
+<section class="gallery">
+
+<div class="container">
+
+<h2>
+Registro del proyecto
+</h2>
+
+<div class="gallery-grid">
+
+
+<!-- FOTO 1 -->
+
+<img
+    src="libro1.jpg"
+    alt="Ciclo de Charlas de Fomento del Libro y la Lectura"
+>
+
+
+<!-- FOTO 2 -->
+
+<img
+    src="libro2.jpg"
+    alt="Ciclo de Charlas de Fomento del Libro y la Lectura"
+>
+
+
+<!-- FOTO 3 -->
+
+<img
+    src="libro3.jpg"
+    alt="Ciclo de Charlas de Fomento del Libro y la Lectura"
+>
+
+
+<!-- FOTO 4 -->
+
+<img
+    src="libro4.jpg"
+    alt="Ciclo de Charlas de Fomento del Libro y la Lectura"
+>
+
+
+<!-- FOTO 5 -->
+
+<img
+    src="libro5.jpg"
+    alt="Ciclo de Charlas de Fomento del Libro y la Lectura"
+>
+
+
+<!-- FOTO 6 -->
+
+<img
+    src="libro6.JPG"
+    alt="Ciclo de Charlas de Fomento del Libro y la Lectura"
+>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VOLVER -->
+
+<section class="return">
+
+<a href="index.html" class="button">
+← Volver al sitio principal
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+Asociación Greengalaxy · Patrimonio · Medioambiente · Sostenibilidad
+</p>
+
+</footer>
+
+</body>
+</html>
 
